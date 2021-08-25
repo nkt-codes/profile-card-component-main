@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+
+html,
+body {
+  font-family: "Kumbh Sans", "Times New Roman";
+  margin: 0;
+  height: 100%;
+}
+
+.bg-container {
+  background: hsl(185, 75%, 39%);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#top-bg-img {
+  position: absolute;
+  top: -450px;
+}
+
+#bottom-bg-img {
+  position: absolute;
+  width: 75%;
+  left: 900px;
+  top: 500px;
+  object-fit: cover;
+}
+
+.card {
+  height: 500px;
+  width: 500px;
+  border-radius: 25px;
+  background: white;
+  position: absolute;
+  top: 25%;
+  left: 37.5%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#card-bg {
+  width: 100%;
+}
+
+#person-image {
+  background: rgb(255, 255, 255);
+  width: 150px;
+  height: 150px;
+  margin: 0px auto;
+  border-radius: 150px;
+  position: relative;
+  top: -75px;
+  overflow: hidden;
+  border: 5px solid white;
+}
+.image-user {
+  margin: 0px auto;
+  width: 100%;
+}
+.user-name {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  left: 170px;
+  top: 290px;
+}
+.user-name span {
+  font-weight: 400;
+}
+.user-location {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  top: 330px;
+  left: 220px;
+}
+
+.user-profile-details-numbers,
+.user-profile-details-item {
+  display: grid;
+  grid-template-columns: 150px 200px auto;
+}
+
+.profile-details-item,
+.profile-details-numbers {
+  text-align: center;
+
+  padding: 5px;
+}
+.profile-details-item {
+  font-size: 16px;
+}
+.profile-details-numbers {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 60px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: 7rem;
+  left: 0rem;
+  right: 0rem;
+}
